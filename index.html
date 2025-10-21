@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Form com Tailwind</title>
+</head>
+
+<body class="bg-green-500 h-screen flex items-center justify-center">
+
+    <div class="flex flex-col md:flex-row items-start justify-center gap-10 p-6">
+
+        <div class="flex flex-col items-center">
+            <h2 class="text-2xl font-semibold text-white mb-4 text-center">Planilha / Cadastro de Clientes e Fornecedores</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/IyIjYuF_HUo?si=Yj9cCdITVlLgiVLk"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="rounded-lg shadow-lg">
+            </iframe>
+        </div>
+
+        <form action="" class="bg-green-800 p-6 rounded-lg shadow max-w-md space-y-4 text-white">
+            <h1 class="text-xl font-semibold text-center">Receba essa planilha por E-mail</h1>
+            <p class="text-center text-sm">Preencha os seus dados para receber o material</p>
+
+            <div>
+                <label for="email" class="block text-sm font-medium mb-1">E-mail*</label>
+                <input type="email" id="email" class="w-full border px-4 py-3 rounded text-black" required>
+            </div>
+
+            <div>
+                <label for="nome" class="block text-sm font-medium mb-1">Nome*</label>
+                <input type="text" id="nome" class="w-full border px-4 py-3 rounded text-black" required>
+            </div>
+
+            <div>
+                <label for="question" class="block text-sm font-medium mb-1">Você possui empresa?*</label>
+                <input type="text" id="question" class="w-full border px-4 py-3 rounded text-black" required>
+            </div>
+
+            <div>
+                <label for="question" class="block text-sm font-medium mb-1">Qual o setor da sua empresa?*</label>
+                <input type="text" id="question" class="w-full border px-4 py-3 rounded text-black" required>
+            </div>
+
+            <div>
+                <label for="pessoas" class="block text-sm font-medium mb-1">Quantas pessoas tem na sua empresa?*</label>
+                <input type="text" id="pessoas" class="w-full border px-4 py-3 rounded text-black" required>
+            </div>
+
+            <button type="submit"
+                class="bg-orange-500 hover:bg-orange-600 transition text-white px-4 py-2 rounded w-full font-semibold">
+                Receber o Material
+            </button>
+        </form>
+
+    </div>
+</body>
+
+</html>
